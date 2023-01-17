@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from "styled-components";
+import { lighTheme, darkTheme } from "../src/theme";
+import GlobalStyles from "../src/styles/global";
+import { Tipograf } from "./styles/styles";
+import {AppRoutes} from "./routes/AppRoutes"
+export function App() {
 
-function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider
+      theme={
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: light)").matches
+          ? lighTheme
+          : darkTheme
+      }
+    >
+      <>
+        <Tipograf>              
+          <AppRoutes />          
+        </Tipograf>
+      </>
+      <GlobalStyles />
+    </ThemeProvider>
   );
 }
-
-export default App;
