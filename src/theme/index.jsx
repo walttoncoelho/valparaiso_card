@@ -1,12 +1,11 @@
 export const lighTheme = {
   color: {
-    background: "#ffff",
-    text: "#292929"
+    background: "#000000",
+    text: "#d0c2df"
     /*  Background Gradiente*/
   },
   fonts: {
-    primary: '"Roboto", sans-serif',
-    secondary: '"Roboto", sans-serif'
+    primary: '"Mermaid", sans-serif',  
   }
 };
 
@@ -16,7 +15,7 @@ export const darkTheme = {
     text: "#ffffff"
   },
   fonts: {
-    primary: '"Roboto", sans-serif',
-    secondary: '"Roboto", sans-serif'
+    primary: '"Mermaid", sans-serif',
+    secondary: ''
   }
 };

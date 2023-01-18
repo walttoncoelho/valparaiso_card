@@ -16,5 +16,7 @@ body {
     background-color: ${(props) => props.theme.color.background};
     color: ${(props) => props.theme.color.text};   
     font-family: ${(props) => props.theme.fonts.primary};
+    
 }
+
 `;

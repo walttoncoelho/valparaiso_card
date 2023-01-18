@@ -1,28 +1,18 @@
 
 import styled from "styled-components";
-import Blogger from "../fonts/Blogger Sans-Bold Italic.otf";
 
 export const Background = styled.div`
   background: ${(props) => props.color};
 `;
 
-export const Tipograf = styled.div`
-@font-face {
-  font-family: 'Blogger';
-  src: local (${Blogger}) format('opentype'),
-       
-}    
-
-      
+export const Tipograf = styled.div`      
   h1 {  
-    font-family: Blogger;
     font-size: 3em;
     line-height: 64px;
     letter-spacing: 0.01em;   
     font-weight: 900;
-    line-height: 64px;
-    letter-spacing: -0.3rem;
-    font-size: 4em;
+    line-height: 64px;    
+    font-size: 4em;     
     
   }
 
@@ -64,14 +54,13 @@ export const Tipograf = styled.div`
     color: #4d4c4c;
     font-size: 0.8em;
     font-weight: 400;
-    font-family: Roboto, sans-serif;
+    
   }
 
   p.italico {
     color: #4d4c4c;
     font-size: 0.8em;
-    font-weight: 400;
-    font-family: Roboto, sans-serif;
+    font-weight: 400;   
     font-style: italic;
   }
 
@@ -80,8 +69,7 @@ export const Tipograf = styled.div`
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
-    font-family: Roboto, sans-serif;    
+    font-weight: bold;    
   }
 `;
 
@@ -103,4 +91,6 @@ img{
   justify-content: center;  
 }
 `
+
+
 
